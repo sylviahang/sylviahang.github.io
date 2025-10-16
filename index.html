@@ -5,49 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hang Family Cookbook</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Hang Family Cookbook</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="./pages/recipes.html">Recipes</a></li>
+                <li><a href="./pages/about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Our Family Recipes</h2>
-            <p>Welcome to our collection of cherished family recipes passed down through generations.</p>
-        </section>
-
         <section id="featured-recipes">
             <h2>Featured Recipes</h2>
             <div class="recipe-grid">
-                <div class="recipe-card">
+                <a href="./pages/recipes.html" class="recipe-card">
                     <img src="./assets/images/placeholder1.jpg" alt="Traditional Pho">
-                    <h3><a href= "./pages/recipes.html">Traditional Pho</a></h3>
-                    <a href= "./pages/recipes.html"></a>
-                    <p>Vietnamese noodle soup with rich broth</p>
-                </div>
-                <div class="recipe-card">
+                    <h3>Traditional Pho</h3>
+                    <p>A comforting bowl of aromatic Vietnamese noodle soup with tender meat and fresh herbs.</p>
+                </a>
+                <a href="./pages/recipes.html" class="recipe-card">
                     <img src="./assets/images/placeholder1.jpg" alt="Spring Rolls">
-                    <h3><a href= "./pages/recipes.html">Spring Rolls</a></h3>
-                    <p>Fresh and crispy Vietnamese appetizer</p>
-                </div>
-                <div class="recipe-card">
+                    <h3>Spring Rolls</h3>
+                    <p>Fresh rice paper rolls filled with shrimp, herbs, and vermicelli noodles.</p>
+                </a>
+                <a href="./pages/recipes.html" class="recipe-card">
                     <img src="./assets/images/placeholder1.jpg" alt="Banh Mi">
-                    <h3><a href= "./pages/recipes.html">Banh Mi</a></h3>
-                    <p>Classic Vietnamese sandwich</p>
+                    <h3>Banh Mi</h3>
+                    <p>Crispy Vietnamese baguette filled with grilled meat, pickled vegetables, and pate.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="reels">
+            <h2>Reels</h2>
+            <div class="reels-container">
+                <div class="reel-card">
+                    <div class="reel-thumbnail">
+                        <img src="./assets/images/placeholder1.jpg" alt="Quick Pho Video">
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="reel-info">
+                        <h3>Quick Pho</h3>
+                    </div>
+                </div>
+                <div class="reel-card">
+                    <div class="reel-thumbnail">
+                        <img src="./assets/images/placeholder1.jpg" alt="Spring Roll Tips Video">
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="reel-info">
+                        <h3>Spring Roll Tips</h3>
+                    </div>
+                </div>
+                <div class="reel-card">
+                    <div class="reel-thumbnail">
+                        <img src="./assets/images/placeholder1.jpg" alt="Perfect Banh Mi Video">
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="reel-info">
+                        <h3>Perfect Banh Mi</h3>
+                    </div>
+                </div>
+                <div class="reel-card">
+                    <div class="reel-thumbnail">
+                        <img src="./assets/images/placeholder1.jpg" alt="Sauce Making Video">
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="reel-info">
+                        <h3>Essential Sauces</h3>
+                    </div>
+                </div>
+                <div class="reel-card">
+                    <div class="reel-thumbnail">
+                        <img src="./assets/images/placeholder1.jpg" alt="Herb Guide Video">
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="reel-info">
+                        <h3>Herb Guide</h3>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Hang Family Cookbook. All rights reserved.</p>
+        <h2>Hang Family Cookbook</h2>
     </footer>
 </body>
 </html>
