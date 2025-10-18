@@ -18,8 +18,63 @@ header h1 {
     text-align: center;
 }
 
-#featured-recipes h2 {
+#featured-recipes h2,
+#all-recipes h2,
+#categories h2 {
     text-align: center;
+    color: #3236a0;
+    font-size: 2.5em;
+}
+
+/* Categories Section */
+#categories {
+    padding: 40px 0;
+    margin-bottom: 60px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+}
+
+.category-card {
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3236a0;
+    margin: 0 auto 15px;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image img {
+    transform: scale(1.1);
+}
+
+.category-card h3 {
+    color: #3236a0;
+    font-size: 1.4em;
+    margin: 0;
 }
 
 nav ul {
@@ -56,18 +111,27 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 60px; /* Add space for fixed footer */
+    margin-bottom: 60px;
+    /* Add space for fixed footer */
 }
 
 #featured-recipes {
     margin: 40px 0;
 }
 
-.recipe-grid {
+.recipe-grid,
+.recipe-grid-four {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 20px;
+}
+
+.recipe-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.recipe-grid-four {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .recipe-card {
@@ -100,6 +164,7 @@ main {
     margin: 15px;
     color: #3236a0;
     font-size: 1.4em;
+    text-align: center;
 }
 
 .recipe-card p {
@@ -133,6 +198,7 @@ main {
 .reel-card {
     width: 200px;
     transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
 .reel-card:hover {
@@ -164,6 +230,7 @@ main {
     font-size: 1.1em;
     margin: 0;
     text-align: center;
+
 }
 
 .play-button {
@@ -183,6 +250,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    text-align: center;
 }
 
 .play-button:hover {
@@ -206,3 +274,244 @@ footer h2 {
     font-size: 1em;
 }
 
+/* About Page Styles */
+#overview {
+    padding: 40px 0;
+}
+
+/* Meet the Chefs Section */
+#meet-the-chefs {
+    padding: 60px 0;
+}
+
+#meet-the-chefs h2 {
+    text-align: center;
+    color: #3236a0;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.chef-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.chef-card:hover {
+    transform: translateY(-5px);
+}
+
+.chef-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3236a0;
+}
+
+.chef-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chef-card h3 {
+    color: #3236a0;
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.chef-card p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.favorite-recipes-link {
+    display: inline-block;
+    color: #3236a0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: 2px solid #3236a0;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+.favorite-recipes-link:hover {
+    background-color: #3236a0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(50, 54, 160, 0.3);
+}
+
+.overview-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.overview-text {
+    flex: 1;
+}
+
+.overview-text h2 {
+    color: #3236a0;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.overview-text p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.overview-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.overview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Recipe Template Styles */
+.recipe-date {
+    color: #666;
+    font-style: italic;
+    margin: 10px 0 20px;
+    font-size: 1.1em;
+}
+
+.watch-reel-link {
+    display: inline-block;
+    color: #3236a0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 2px solid #3236a0;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.watch-reel-link:hover {
+    background-color: #3236a0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(50, 54, 160, 0.3);
+}
+
+.watch-reel-link i {
+    margin-left: 8px;
+}
+
+/* Recipe Details Section */
+#recipe-details {
+    padding: 30px 0;
+    margin: 40px 0;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+}
+
+.info-label {
+    color: #666;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.info-value {
+    color: #3236a0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Recipe Content Section */
+#recipe-content {
+    padding: 40px 0;
+}
+
+.recipe-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ingredients-column h3,
+.instructions-column h3 {
+    color: #3236a0;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients-list li {
+    padding: 12px 0;
+    color: #444;
+    font-size: 1.1em;
+}
+
+.instructions-list {
+    padding-left: 25px;
+}
+
+.instructions-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #444;
+    font-size: 1.1em;
+    padding-left: 10px;
+}
+
+.all-recipes h2 {
+    text-align: center;
+}
